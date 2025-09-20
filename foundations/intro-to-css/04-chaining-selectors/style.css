@@ -1,1 +1,14 @@
-/* Add CSS Styling */
+/* Add CSS Styling *//* Only style the avatars (top row), not the originals (bottom row) */
+.avatar.proportioned {
+    width: 300px;
+    height: auto;          /* keep the image’s original square ratio */
+  }
+
+  .avatar.distorted {
+    width: 200px;
+    height: 400px;         /* 2x the width → intentionally squished */
+  }
+
+  .avatar {
+    filter: sepia(1) hue-rotate(180deg) saturate(3) opacity(1);
+  }
